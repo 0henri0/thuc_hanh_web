@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+a {
+    text-decoration: none
+}
+
+ul {
+    list-style: none
+}
+
+.clear {
+    clear: both;
+    height: 3px;
+    margin: 3px 0
+}
+
+#wrap {
+    width: 1200px;
+    margin: 0px auto;
+}
+
+.header {
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    padding-top: 20px;
+    color: #fff;
+}
+
+.content {
+    width: 1200px;
+    min-height: 700px;
+    margin: 0 auto;
+    background: #dedede;
+    text-align: center;
+    padding-top: 20px;
+    color: #900;
+}
+
+.footer {
+   width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    color: #fff
+}
+
+.menu a {
+    color: white;
+}
+
+.menu>li {
+    text-align: center;
+    width: 116px;
+    float: left;
+    border-right: 1px solid #E8E8E8;
+    background: #0B5485;
+    z-index: 700;
+}
+
+.menu>li:last-child {
+    border-right: none;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu>li a {
+    display: block;
+    text-transform: none;
+    padding: 10px;
+}
+
+.menu>li>a {
+    text-transform: uppercase;
+}
+
+.menu>li>a {
+    display: block;
+    padding: 10px;
+}
+
+.menu li .sub_menu {
+    position: absolute;
+    display: none;
+    width: 160px;
+    background: #810C7D;
+    top: 0px;
+    left: 100%;
+    text-align: left;
+}
+
+.menu li:hover>.sub_menu {
+    display: block;
+}
+
+.menu>li>.sub_menu {
+    top: 35px;
+    position: absolute;
+    left: 0px;
+}
+
+.menu li {
+    border-bottom: 1px solid #ffff;
+}
+
+.menu>li:last-child {
+    border-bottom: none;
+    width: 145px;
+}
+
+.menu li:hover {
+    background: #06CAC8;
+}
+
+.menu li.down {
+    background-image: url('../images/down.gif');
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}
+
+.menu li.right {
+    background-image: url('../images/right.gif');
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}
+
+.thumbnail {
+    position: relative;
+    z-index: 0;
+}
+
+.thumbnail:hover {
+    background-color: transparent;
+    z-index: 50;
+}
+
+.thumbnail span {
+    position: absolute;
+    background-color: #dedede;
+    padding: 5px;
+    left: -15px;
+    border: 1px dashed gray;
+    width: 160px;
+    text-align: justify;
+    visibility: hidden;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    color: blue;
+}
+
+.thumbnail:hover span {
+    visibility: visible;
+    top: 0;
+    top: -60px;
+}
